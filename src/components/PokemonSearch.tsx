@@ -77,7 +77,7 @@ const PokemonSearch: React.FC = () => {
       <form onSubmit={handleSearchSubmit} className="relative">
         <input
           type="text"
-          placeholder="Pesquisar Pokemon..."
+          placeholder="Pesquisar Pokémon..."
           value={searchTerm}
           onChange={handleSearchChange}
           onFocus={() => setShowSuggestions(true)}

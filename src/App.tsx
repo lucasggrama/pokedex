@@ -6,7 +6,7 @@ import PokemonSearch from "./components/PokemonSearch";
 
 const App: React.FC = () => {
   return (
-    <Router basename={import.meta.env.PUBLIC_URL}>
+    <Router>
       <div className="min-h-screen bg-dracula-background text-dracula-foreground">
         <Routes>
           <Route path="/" element={<Pokedex />} />
