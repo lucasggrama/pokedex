@@ -20,7 +20,7 @@ const PokemonSearch: React.FC = () => {
       setLoading(true);
       try {
         const response = await fetch(
-          "https://pokeapi.co/api/v2/pokemon?limit=1000"
+          "https://pokeapi.co/api/v2/pokemon?limit=2000"
         );
         const data = await response.json();
         setAllPokemon(data.results);
