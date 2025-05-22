@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useCallback } from "react";
 import { useInfiniteQuery } from "@tanstack/react-query";
 import PokemonCard from "../components/PokemonCard";
-import SearchBar from "../components/SearchBar";
 import type { Pokemon } from "../interfaces/Pokemon";
 import PokemonSearch from "../components/PokemonSearch";
 
@@ -27,7 +26,7 @@ const fetchPokemonList = async ({ pageParam = 0 }) => {
 };
 
 const Pokedex: React.FC = () => {
-  const [searchTerm, setSearchTerm] = useState("");
+  const [searchTerm] = useState("");
 
   const {
     data,
