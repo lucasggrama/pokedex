@@ -7,7 +7,7 @@ interface PokemonCardProps {
 
 const PokemonCard: React.FC<PokemonCardProps> = ({ pokemon }) => {
   return (
-    <div className="max-w-sm rounded overflow-hidden shadow-lg bg-white">
+    <div className="max-w-sm rounded overflow-hidden shadow-lg #282A36">
       <div className="flex justify-center">
         <img
           className="w-32 h-32"
@@ -23,7 +23,7 @@ const PokemonCard: React.FC<PokemonCardProps> = ({ pokemon }) => {
           {pokemon.types.map((type, index) => (
             <span
               key={index}
-              className={`inline-block rounded-full px-3 py-1 text-sm font-semibold text-white bg-${type.type.name}-type`}
+              className={`inline-block rounded-full px-3 py-1 text-sm font-semibold text-black bg-${type.type.name}-type`}
             >
               {type.type.name}
             </span>
